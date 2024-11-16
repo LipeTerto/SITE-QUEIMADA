@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <img src="../TRABALHO DIPRIMIO/logo.png" alt="Logo" class="logo">
+            <ul class="nav-links">
+                <li><a href="SobreNos.html">Sobre nós</a></li>
+                <li><a href="Funcionamento.html">Funcionamento</a></li>
+                <li><a href="Inscricao.html">Inscrição</a></li>
+                <li><a href="Mapa.html" class="active">Mapa</a></li>
+                <li><a href="Contato.html">Contato</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="#"><img src="../TRABALHO DIPRIMIO/icon1.png" alt="Icone1"></a>
+                <a href="#"><img src="../TRABALHO DIPRIMIO/icon2.png" alt="Icone2"></a>
+                <a href="#"><img src="../TRABALHO DIPRIMIO/icon3.png" alt="Icone3"></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="mapa">
+            <h1><img src="../TRABALHO DIPRIMIO/megaphone.png" alt="Megaphone" class="megaphone">   Navegue pelo Mapa</h1>
+            <p>Explore nosso mapa interativo, onde você pode visualizar as áreas monitoradas em tempo real. Conheça as regiões mais suscetíveis a queimadas e veja como nossas tecnologias estão atuando para mitigar esses riscos. O mapa é uma ferramenta poderosa que permite a todos entenderem a dinâmica das queimadas e a importância da nossa atuação.</p>
+
+            <!-- Filtro de Estado -->
+            <div class="filtro">
+                <label for="estado">Estado</label>
+                <select name="estado" id="estado">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="BA">Bahia</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="PR">Paraná</option>
+                    <!-- Adicione mais estados conforme necessário -->
+                </select>
+                <button id="buscar">Buscar</button>
+            </div>
+
+            <!-- Placeholder para o Mapa -->
+            <div class="map-placeholder">
+                <p>Mapa será exibido aqui</p>
+            </div>
+        </section>
+        <div class="background-effect"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Software de Controle de Queimadas</p>
+    </footer>
+
+</body>
+</html>

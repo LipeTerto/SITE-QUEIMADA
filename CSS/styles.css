@@ -1,0 +1,282 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #000000;
+}
+
+.navbar .logo {
+    margin-right: 1rem; /* Ajuste conforme necessário */
+    height: 130px; /* Ajuste o tamanho conforme necessário */
+}
+
+.nav-links {
+    font-size: 1.6rem;
+    display: flex;
+    gap: 3.5rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-icons img {
+    width: 35px;
+    margin-left: 20px;
+}
+
+.megaphone {
+    vertical-align: middle; /* Alinha verticalmente a imagem com o texto */
+    margin-right: 10px; /* Adiciona espaço entre a imagem e o texto */
+    width: 25px; /* Ajuste o tamanho do ícone conforme necessário */
+}
+
+/* Main Content */
+.intro {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    color: #da02da; /* Ajuste para o rosa que deseja */
+}
+
+.intro h2 {
+    font-size: 1.5rem;
+    color: #ffffff; /* Ajuste para o gradiente roxo/rosa */
+}
+
+.intro h2 span {
+    color: #b000b5; /* Exemplo de cor personalizada para as letras coloridas */
+}
+
+/* Fundo - Background Effect */
+.background-effect {
+    position: absolute; /* Faz o elemento se posicionar em relação ao contêiner mais próximo com posição relativa */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('../TRABALHO DIPRIMIO/background-effect.png') no-repeat center;
+    background-size: cover;
+    z-index: -1; /* Move o background-effect para trás dos outros elementos */
+    opacity: 0.7; /* Torna o background semi-transparente, se necessário */
+}
+
+/* Adicione isso no container principal para posicionar o conteúdo corretamente */
+main {
+    position: relative; /* Garante que o texto seja empilhado acima do background */
+    z-index: 1; /* Prioriza o texto acima do background */
+}
+
+/* Accessibility Options */
+.accessibility-options {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.font-adjust {
+    background: #444;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #444; /* Cor de fundo ativa */
+    color: #fff; /* Cor do texto */
+    font-weight: bold; /* Destaque para o texto */
+    border-bottom: 2px solid #da02da; /* Indicador visual, opcional */
+}
+
+.hero {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #03e2ff; /* Ajuste para o rosa que deseja */
+}
+
+/* Página Inscrição */
+.intro {
+    text-align: center;
+    padding: 0.1rem 1rem;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    color: #da02da; /* Ajuste para o rosa desejado */
+}
+
+.intro h2 span {
+    color: #b000b5; /* Exemplo de cor personalizada para as letras coloridas */
+}
+
+/* Formulário de Inscrição */
+.form-inscricao {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.form-inscricao label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.form-inscricao input {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    background-color: #000000;
+    border: 2px solid #da02da; /* Borda rosa */
+    border-radius: 25px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.form-inscricao input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+.termo-uso {
+    margin-bottom: 0rem;
+}
+
+.btn-inscricao {
+    width: 30%;
+    padding: 1rem;
+    background-color: #000000;
+    border: 2px solid #da02da; /* Borda rosa */
+    border-radius: 25px;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.btn-inscricao:hover {
+    background-color: #f205f2;
+}
+
+
+.termo-uso {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Alinha o checkbox e o texto verticalmente no centro */
+    text-align: center; /* Garante que o texto também fique centralizado */
+    margin-top: 1rem; /* Ajuste a margem conforme necessário */
+}
+
+/* Estilo para o checkbox */
+.termo-uso input[type="checkbox"] {
+    width: 20px; /* Tamanho do círculo */
+    height: 20px; /* Tamanho do círculo */
+    background-color: #000000; /* Cor de fundo preto */
+    border: 2px solid #da02da; /* Borda rosa */
+    border-radius: 50%; /* Faz o botão ficar redondo */
+    cursor: pointer; /* Indica que é interativo */
+    appearance: none; /* Remove o estilo padrão do checkbox */
+    margin-right: 10px; /* Adiciona um pequeno espaço entre o checkbox e o texto */
+}
+
+/* Quando o checkbox é marcado, altera o fundo */
+.termo-uso input[type="checkbox"]:checked {
+    background-color: #da02da; /* Cor de fundo rosa quando marcado */
+}
+
+/* Estilo para o texto ao lado do checkbox */
+.termo-uso label {
+    color: #fff; /* Cor do texto em branco */
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+
+
+/* Mapa Page */
+.mapa {
+    text-align: center;
+    padding: 1rem 20rem;
+}
+
+.mapa h1 {
+    font-size: 2.5rem;
+    color: #4600b6; /* Azul para o título */
+}
+
+.mapa p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+/* Filtro */
+.filtro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.filtro select {
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    border-radius: 25px;
+    border: 2px solid #4600b6;
+    background-color: #000;
+    color: #fff;
+}
+
+.filtro button {
+    font-size: 1.4rem;
+    padding: 0.5rem 2rem;
+    border-radius: 25px;
+    border: 2px solid #4600b6;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.filtro button:hover {
+    background-color: #4600b6;
+}
+
+/* Placeholder do Mapa */
+.map-placeholder {
+    margin-top: 3rem;
+    padding: 3rem;
+    background-color: #222;
+    color: #fff;
+    border-radius: 25px;
+    border: 2px solid #4600b6;
+}
+
+.map-placeholder p {
+    font-size: 1.4rem;
+    color: #fff;
+}
