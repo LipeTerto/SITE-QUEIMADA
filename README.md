@@ -28,4 +28,4 @@ O site foi pensado para ser intuitivo, acessível e funcional, atendendo a um pr
 - PEDRO HENRIQUE MARTINS SILVA - Responsável pelo design e Backend do site (.NET)
 - DANIELA GABRIEL DE PAULA - Responsável pela arquitetura e design do site
 
-  ![Mapa interativo](TRABALHODIPRIMIO/icon1.png)
+  ![Mapa interativo](SITE.png)
