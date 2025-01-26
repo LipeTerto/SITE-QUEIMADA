@@ -27,3 +27,5 @@ O site foi pensado para ser intuitivo, acessível e funcional, atendendo a um pr
 - MICHELLE KAOLIN VIEIRA SOUZA - Responsável pela UX e design do site
 - PEDRO HENRIQUE MARTINS SILVA - Responsável pelo design e Backend do site (.NET)
 - DANIELA GABRIEL DE PAULA - Responsável pela arquitetura e design do site
+
+  ![Mapa interativo](assets/logo.png)
